@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>輸入發票</title>
+</head>
+<body>
+ <div id="button">
+    <form action="my_receipt_api.php" method="POST">
+        年份<input type="text" name="year" id="year" maxlength="4">
+        期別<select name="period" id="period">
+        <option value="1">1-2月</option>
+        <option value="2">3-4月</option>
+        <option value="3">5-6月</option>
+        <option value="4">7-8月</option>
+        <option value="5">9-10月</option>
+        <option value="6">11-12月</option>
+        </select>
+        發票號碼<input type="text" name="Enum" id="Enum" maxlength="2" placeholder="填入英文編號"> - <input type="text" name="num" id="num" maxlength="8"> 
+        費用<input type="text" name="expense" id="expense" > 
+        <input type="submit" value="送出">
+    </form>
+</div>
+</body>
+</html>

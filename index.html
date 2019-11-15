@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>發票兌獎系統</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./jquery/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+    <div id="main">
+        <a href="#" onclick="loadpage('input_receipt.html')">輸入發票</a>
+        <a href="#" onclick="loadpage('my_receipt.php')">我的發票</a>
+        <a href="#" onclick="loadpage('award.php')">輸入兌獎號碼</a>
+        <a href="#" onclick="loadpage('my_award.html')">查詢中獎發票</a>
+    </div>
+    <div class="content">
+        
+    </div>
+</body>
+</html>
+<script>
+    loadpage("input_receipt.html");
+
+    function loadpage(page){
+      $(".content").load(page)
+    
+    }
+ </script>
